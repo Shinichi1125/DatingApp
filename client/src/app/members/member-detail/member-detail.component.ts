@@ -40,19 +40,13 @@ export class MemberDetailComponent implements OnInit {
         big: photo?.url
       })
     }
-    console.log("After looping through this.member.photos in member-detail.component.ts");
-    console.log(imageUrls);
     return imageUrls; 
   }
 
   loadMember(){
     this.memberService.getMember(this.route.snapshot.paramMap.get('username')).subscribe(member => {
       this.member = member; 
-      console.log("The content of this.member");
-      console.log(this.member);
       this.galleryImages = this.getImages();
-      console.log("The content of this.galleryImages");
-      console.log(this.galleryImages);
     })
   }
 
