@@ -1,5 +1,9 @@
 using System;
 using System.Collections.Generic;
+<<<<<<< HEAD
+=======
+//using API.Extensions;
+>>>>>>> 64306bd77d4424ebfb43158382c364716deeebe9
 using Microsoft.AspNetCore.Identity;
 
 namespace API.Entities
@@ -22,6 +26,5 @@ namespace API.Entities
         public ICollection<Message> MessagesSent { get; set; }  
         public ICollection<Message> MessagesReceived { get; set; }
         public ICollection<AppUserRole> UserRoles { get; set; }
-
     }
 }
